@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import Dashboard from '@/components/Dashboard';
 import LearningPage from '@/components/LearningPage';
 import MarketPage from '@/components/MarketPage';
+import MapPage from '@/components/MapPage';
 import {
   performanceData,
   scheduleData,
@@ -84,6 +85,8 @@ export default function Index() {
           onFilterChange={handleFilterChange}
         />
       )}
+
+      {activeTab === 'map' && <MapPage />}
 
       <Footer />
     </div>
