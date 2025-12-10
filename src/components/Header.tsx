@@ -43,14 +43,6 @@ export default function Header({ activeTab, onTabChange }: HeaderProps) {
               <Icon name="ShoppingBag" size={18} />
               Минимаркет
             </Button>
-            <Button
-              variant={activeTab === 'map' ? 'default' : 'ghost'}
-              className="gap-2"
-              onClick={() => onTabChange('map')}
-            >
-              <Icon name="Map" size={18} />
-              Карта
-            </Button>
           </nav>
 
           <div className="flex items-center gap-3">
